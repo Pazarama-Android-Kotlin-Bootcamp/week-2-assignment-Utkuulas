@@ -8,6 +8,7 @@ import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
+
 class MainActivity : AppCompatActivity() {
     private lateinit var ivChangePasswordVisibility: ImageView     // Declares a button for manipulating the visibility of password
     private lateinit var etPassword: EditText     // Declares an edittable text box for the password input
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ivChangePasswordVisibility  = findViewById(R.id.imageViewShowPassword)     // Binds the class object and the XML element to each other
+        ivChangePasswordVisibility =
+            findViewById(R.id.imageViewShowPassword)     // Binds the class object and the XML element to each other
         etPassword = findViewById(R.id.editTextPassword)
 
         hideText(etPassword)     // Hides the password when the application is launched
@@ -38,14 +40,16 @@ class MainActivity : AppCompatActivity() {
     fun goToSignUp(view: View) {
         val intent = Intent(this, SignUpActivity::class.java)     // Declares an intent for changing the activity
         startActivity(intent)     // Starts the new activity
-        finish()
+        finish()     // Destroys current activity so that app returns to previous one when was clicked back arrow button
     }
 
     fun hideText(editText: EditText) {
-        editText.transformationMethod = PasswordTransformationMethod.getInstance()     // Assigns a value to the transformation method for hiding the text object
+        editText.transformationMethod =
+            PasswordTransformationMethod.getInstance()     // Assigns a value to the transformation method for hiding the text object
     }
 
     fun showText(editText: EditText) {
-        editText.transformationMethod = HideReturnsTransformationMethod.getInstance()     // Assigns a value to the transformation method for showing the text object
+        editText.transformationMethod =
+            HideReturnsTransformationMethod.getInstance()     // Assigns a value to the transformation method for showing the text object
     }
 }
