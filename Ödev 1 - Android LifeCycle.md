@@ -432,3 +432,5 @@ Ne yazık ki, bu çözümün iki büyük sorunu var:
 
 1. [*How to Implement the Android LifeCycle Callback Methods* by Antony Gitau](https://www.section.io/engineering-education/understanding-and-implementing-the-android-lifecycle/#:~:text=An%20Android%20activity%20goes%20through,activity%20enters%20a%20new%20state.)
 2. [Android Developer Docs](https://developer.android.com/topic/libraries/architecture/lifecycle)
+
+---
