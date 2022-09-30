@@ -4,13 +4,13 @@
 
 ## *Android Lifecycle Nedir ?*
 
-Yazılım geliştiriciler, ***Android Lifecycle*** sayesinde uygulamada gezinen bir kullanıcının hangi aktivite durumlarından geçtiğini anlamasına yardımcı olur. Bu sayede uygulama çökmesi ve başka hatalardan kaçınarak doğru zamanda uygun işlemleri yapabiliriz.
+***Android Lifecycle***, yazılım geliştiricilerin uygulamada gezinen bir kullanıcının hangi aktivite durumlarından geçtiğini anlamasına yardımcı olur. Bu sayede uygulama çökmesi ve başka hatalardan kaçınarak doğru zamanda uygun işlemleri yapabiliriz.
 
 ---
 
 ## *Android Lifecycle Nasıl Yönetilir ?*
 
-Android uygulamaların bir yaşam döngüsü vardır. Bir kullanıcı bir  uygulamayı açtığında onu kapatıncaya kadar uygulama çeşitli durumlardan geçer. Uygulamanın durumu kullanıcı onu başlattığı, duraklattığı, durdurduğu veya kapattığında neler yapacağını yönetmenizi sağlar. Bu durumları `callback` metodları aracılığıyla yönetiriz. Kullanıcıya doğru çıktıyı vermek amacıyla belirli işlemler yapmak için bu metodlar `override` edilebilirler. Diyelim ki uygulamanız arka planda çalışıyorken bazı verileri kaydetmek istiyorsunuz. Bu durumda aktivite yaşam döngüsünü bilmeniz gerekir. Bu size işi halletmeniz için gerekli doğru `callback` metodunu `implement` etmenizi sağlar.
+Android uygulamaların bir yaşam döngüsü vardır. Kullanıcı bir  uygulamayı açtığında onu kapatıncaya kadar uygulama çeşitli durumlardan geçer. Uygulamanın durumu kullanıcı onu başlattığı, duraklattığı, durdurduğu veya kapattığında neler yapacağını yönetmenizi sağlar. Bu durumları `callback` metodları aracılığıyla yönetiriz. Kullanıcıya doğru çıktıyı vermek amacıyla belirli işlemler yapmak için bu metodlar `override` edilebilirler. Diyelim ki uygulamanız arka planda çalışıyorken bazı verileri kaydetmek istiyorsunuz. Bu durumda aktivite yaşam döngüsünü bilmeniz gerekir. Bu size işi halletmeniz için gerekli doğru `callback` metodunu `implement` etmenizi sağlar.
 
 ---
 
@@ -432,5 +432,3 @@ Ne yazık ki, bu çözümün iki büyük sorunu var:
 
 1. [*How to Implement the Android LifeCycle Callback Methods* by Antony Gitau](https://www.section.io/engineering-education/understanding-and-implementing-the-android-lifecycle/#:~:text=An%20Android%20activity%20goes%20through,activity%20enters%20a%20new%20state.)
 2. [Android Developer Docs](https://developer.android.com/topic/libraries/architecture/lifecycle)
-
----
